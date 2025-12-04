@@ -1,0 +1,358 @@
+
+cngooglevads-cn.com
+cngstatic-cn.com
+cn%gstaticadssl.l.google.com
+cngtm.oasisfeng.com
+cn!imasdk.googleapis.com
+cn(l2-uberproxy.corp.google.com
+cn&logger-dev.corp.google.com
+cn"logger.corp.google.com
+cn!login.corp.google.com
+cn monitoring.qpdp1.net
+cnocsp.pki.goog
+cn, pagead-googlehosted.l.google.com
+cn0$performanceparameters.googleapis.com
+cn!pki-goog.l.google.com
+cn'prod-controlbe.floonet.goog
+cn$prod-databe.floonet.goog
+cn$prod.databe.floonet.goog
+cn'proxyconfig.corp.google.com
+cnqagpublic.qatp1.net
+cnqgadmin.qcpp1.net
+cnqiao-cn.com
+cn!qpx.googleflights.net
+cnqualysapi.qatp1.net
+cn!qualysguard.qpdp1.net
+cn"r.cert.corp.google.com
+cn(rapture-prod.corp.google.com
+cnrecaptcha-cn.net
+cnrecaptcha.net
+cnredirector.bdn.dev
+cn(redirector.c.chat.google.com
+cn(redirector.c.mail.google.com
+cn(redirector.c.pack.google.com
+cn(redirector.c.play.google.com
+cn-!redirector.c.youtubeeducation.com
+cn&redirector.gcpcdn.gvt1.com
+cnredirector.gvt1.com
+cn, redirector.offline-maps.gvt1.com
+cn$redirector.snap.gvt1.com
+cn*redirector.xn--ngstr-lra8j.com
+cn)safebrowsing-cache.google.com
+cn'safebrowsing.googleapis.com
+cn"scanservice1.qcpp1.net
+cnservice.urchin.com
+cn-!ssl-google-analytics.l.google.com
+cnssl.gstatic.com
+cn'sslredirect.corp.google.com
+cn*staging-controlbe.floonet.goog
+cn'staging-databe.floonet.goog
+cn'staging.databe.floonet.goog
+cn8,streaming-uberproxy-rotation.corp.google.com
+cn/#streaming-uberproxy.corp.google.com
+cn)sup-ssh-relay.corp.google.com
+cn*sup-ssh-relay2.corp.google.com
+cnsup.corp.google.com
+cnsup.l.google.com
+cntac.googleapis.com
+cn&test.gbugs-qa.chromium.org
+cntools.google.com
+cntools.l.google.com
+cn, uberproxy-debug4.corp.google.com
+cn%uberproxy.corp.google.com
+cn&uberproxy6.corp.google.com
+cn"update.crashlytics.com
+cn!update.googleapis.com
+cnwear.googleapis.com
+cn-!www-google-analytics.l.google.com
+cn-!www-googletagmanager.l.google.com
+cn"www.destinationurl.com
+cnwww.gstatic.com
+cnwww.pxcc.com
+cnxn--flw351e.com
+cngvt1-cn.com
+cngvt2-cn.com
+cn2mdn-cn.net
+ads2mdn.net
+adsadmob-cn.com
+ads	admob.com
+adsads.youtube.com
+adsadsense.com
+ads'adsensecustomsearchads.com
+ads%adsenseformobileapps.com
+ads!adservice.google.com
+ads$advertisercommunity.com
+ads%advertiserscommunity.com
+ads"adwords-community.com
+adsadwords.com
+adsadwordsexpress.com
+ads#app-measurement-cn.com
+ads app-measurement.com
+adsdoubleclick-cn.net
+adsdoubleclick.cn
+adsdoubleclick.com
+adsdoubleclick.net
+ads$google-analytics-cn.com
+ads!google-analytics.com
+adsgoogleadapis.com
+adsgoogleads-cn.com
+adsgoogleads.com
+ads$googleadservices-cn.com
+ads!googleadservices.com
+ads googleadsserving.cn
+ads googleanalytics.com
+ads"googleoptimize-cn.com
+adsgoogleoptimize.com
+ads%googlesyndication-cn.com
+ads"googlesyndication.com
+ads$googletagmanager-cn.com
+ads!googletagmanager.com
+ads%googletagservices-cn.com
+ads"googletagservices.com
+ads*googletraveladservices-cn.com
+ads'googletraveladservices.com
+adsgooglevads-cn.com
+ads mail-ads.google.com
+ads)marketingplatform.google.com
+ads
+urchin.com
+ads!analytics.google.com
+ads>1^adservice\.google\.([a-z]{2}|com?)(\.[a-z]{2})?$
+adsI=^r+[0-9]+(---|\.)sn-(2x3|ni5|j5o)\w{5}\.xn--ngstr-lra8j\.com$
+cnE9^r+[0-9]+(---|\.)sn-(2x3|ni5|j5o)\w{5}\.googlevideo\.com$
+cn(redirector.c.play.google.com
+cn"alt1-mtalk.google.com
+!cn"alt2-mtalk.google.com
+!cn"alt3-mtalk.google.com
+!cn"alt4-mtalk.google.com
+!cn"alt5-mtalk.google.com
+!cn"alt6-mtalk.google.com
+!cnmtalk.google.com
+!cn-!firebase-settings.crashlytics.com
+cn!pki-goog.l.google.com
+cn
+c.pki.goog
+cn
+i.pki.goog
+cn
+o.pki.goog
+cncrl.pki.goog
+cncrls.pki.goog
+cnocsp.pki.goog
+cnggpht.cn
+cn
+hpstore.cn
+cn graph.instagram.com
+ads)graph-fallback.instagram.com
+adsgraph.whatsapp.com
+adsgraph.whatsapp.net
+adssnapads.com
+ads	heptio.cn
+cnpanasonic.cn
+cnmyqnapcloud.cn
+cn
+qlinkto.cn
+cnqnap.com.cn
+cnsamsungads.com
+adssamsungeshop.com.cn
+cnasus.com.cn
+cn
+sandisk.cn
+cncanon.cn
+cncanon.com.cn
+cngpsonextra.net
+cnizatcloud.net
+cn!qceventscenter.com.cn
+cnqualcomm.cn
+cn*qualcomm.cn.cdn.cloudflare.net
+cnxtracloud.cn
+cnrazerapi.com
+cnrazersynapse.com
+cnrazerzone.com
+cnyahoo.cn
+cnyahoo.com.cn
+cnads.yahoo.com
+adsgemini.yahoo.com
+adsysm.yahoo.com
+ads$o33249.ingest.sentry.io
+ads openaicom.imgix.net
+ads)browser-intake-datadoghq.com
+adsteamviewer.cn
+cndell-brand.com
+cndell.com.cn
+cndell-alw.com
+cndellemc.com.cn
+cndellmobile.cn
+cn#delltechnologies.com.cn
+cnplatform.dell.com
+cnafcs.dell.com
+cn&clientperipherals.dell.com
+cn&customization-cdn.dell.com
+cndds.dell.com
+cndl.dell.com
+cn%ea2cn-dev-outlet.dell.com
+cn&ea2cn-prod-outlet.dell.com
+cn)ea2cn-staging-outlet.dell.com
+cnfcs.dell.com
+cnfta.dell.com
+cnftaapj.dell.com
+cnftaemea.dell.com
+cnftasitapj.dell.com
+cn#gbxgateway-dev.dell.com
+cngbxgateway.dell.com
+cn
+i.dell.com
+cnnexus.dell.com
+cn"p.cdn.persaas.dell.com
+cnscene7-cdn.dell.com
+cnsi.cdn.dell.com
+cnsm.dell.com
+cnsnp.cdn.dell.com
+cnsnpi.dell.com
+cn"supportassist.dell.com
+cnwww-csb.dell.com
+cnwww.dell.com
+cncisco.cn
+cncisco.com.cn
+cnnetwork-auth.cn
+cnwebex.com.cn
+cnaoruszone.cn
+cngigabyte.cn
+cn%stmicroelectronics.com.cn
+cnamplifi.com.cn
+cnfrontrow.com.cn
+cnubnt.com
+cnubnt.com.cn
+cn	ui.com.cn
+cn
+uum.com.cn
+cnuwn.com
+cn
+adobedc.cn
+cn"advertising.adobe.com
+adstubemogul.com
+adsalibabacloud.co.in
+!cn alibabacloud.com.au
+!cn alibabacloud.com.hk
+!cn alibabacloud.com.my
+!cn alibabacloud.com.sg
+!cn alibabacloud.com.tw
+!cnintel.cn
+cnintel.com.cn
+cnintelrealsense.cn
+cnwww.amd.com
+cnatt.cn
+cn
+attcorp.cn
+cnyahoo.cn
+cnyahoo.com.cn
+cnads.yahoo.com
+adsgemini.yahoo.com
+adsysm.yahoo.com
+adsaboutamazon.cn
+cnalexafund.cn
+cnalexafund.com.cn
+cn	amazon.cn
+cnamazonbusiness.cn
+cn!amazonbusiness.com.cn
+cnamazonchoice.cn
+cnamazonchoice.com.cn
+cnamazonchoices.cn
+cn amazonchoices.com.cn
+cnamazoninspire.cn
+cn amazoninspire.com.cn
+cnamazonlaunchpad.cn
+cn"amazonlaunchpad.com.cn
+cn amazonlending.com.cn
+cnamazonnow.cn
+cnamazonnow.com.cn
+cnassoc-amazon.cn
+cnprimeday.cn
+cnprimeday.com.cn
+cn
+yamaxun.cn
+cnz.cn
+cn+images-cn.ssl-images-amazon.com
+cn-!images-cn-8.ssl-images-amazon.com
+cn amazon-adsystem.com
+adsserving-sys.com
+ads
+a2z.org.cn
+cnamazonaws.cn
+cnamazonaws.com.cn
+cn$amazonwebservices.com.cn
+cnamazonworkdocs.cn
+cn!amazonworkdocs.com.cn
+cn"asfiovnxocqpcry.com.cn
+cnaws-border.cn
+cn%aws-icp-domain-manager.cn
+cn
+awsapps.cn
+cnawsapps.com.cn
+cnawsstatic.cn
+cncloudfront-cn.net
+cncloudfront-test.cn
+cncloudfront.cn
+cnnwcdcloud.cn
+cnnwcdcloud.com.cn
+cn
+nwcddns.cn
+cnnwcdinfosec.cn
+cn
+route53.cn
+cnsagemaker.com.cn
+cnamzndns-cn.biz
+cnamzndns-cn.cn
+cnamzndns-cn.com
+cnamzndns-cn.net
+cn8,.+\.awsdns-cn-[0-9][0-9]\.(biz|com|net|top)$
+cn, .+\.awsdns-cn-[0-9][a-e0-9]\.cn$
+cn	kindle.cn
+cnkindleoasis.cn
+cnkindleoasis.com.cn
+cnamazonprimevideo.cn
+cn#amazonprimevideo.com.cn
+cnacer.com.cn
+cn
+8
+DIVARdivar.clouddivar.irdivarcdn.com
+ñ
+SHOPEE	shopee.io	shopee.ph	shopee.es
+shopee.com	shopee.frshopeemobile.com	shopee.vn	shopee.tw	shopee.sg
+shp.ee	shopee.in	shopee.id	shopee.clshopee.co.idshopee.co.thshopee.com.myshopee.com.mxshopee.com.coshopee.com.br	shopee.cn
+cnshopeesz.com
+cn
+_
+COREL	corel.com	corel.netcoreldraw.appcoreldraw.comcorelstore.com
+
+DEEPSEEKdeepseek.com
+,
+MEDIUM
+medium.commedium.systems
++
+MYFONTSmyfonts.commyfonts.net
+6
+	RUBYCHINAruby-china.orgrubyconfchina.org
+"
+ADBLOCKPLUSadblockplus.org
+¦
+CATEGORY-NETDISK-CNlanzoup.com
+alipan.com
+ctfile.comfeimaoyun.com	filez.comjianguoyun.com
+weiyun.com
+yunpan.com115.com
+115cdn.comwoozooo.com
+lanzov.com
+115cdn.net115cloud.cn115cloud.com115cloud.net
+115img.com115meta.com
+115vod.com116cd.cn	116cd.com	116cd.netlanzouv.com	sq.ccalicloudccp.comlanzous.com	anxia.com
+123pan.com
+lanzou.comlanzouy.com	123pan.cnlanzoux.comlanzouw.comaliyundrive.comilanzou.comlanosso.com
+lanrar.comaliyundrive.netlanzoub.comlanzouc.comlanzoue.comlanzouf.comlanzoug.comlanzouh.comlanzoui.comlanzouj.comlanzouk.comlanzoul.comlanzoum.comlanzouo.comaliyundrive.cloudlanzouq.combaidupan.comlanzout.comlanzouu.compan.xunlei.comyunpan.aliyun.comyun.139.compan.quark.cnpan.baidu.comcloud.189.cn
+
+CHIPHELLchiphell.com
+ 
+
+CODECADEMYcodecademy.com
+¤
+DIGICERTdigicert-cn.comdigicert-validation.comdigicert.com

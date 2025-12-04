@@ -1,0 +1,27 @@
+ewlabel{footdir@149}{\abspage{41}}
+\pp@pagectr{footnote}{67}{81}{29}
+\newlabel{eq:attention}{{2-29}{29}{توجه چندسری}{equation.2.29}{}}
+\newlabel{eq:attention@cref}{{[equation][29][2]2-29}{[1][29][]29}{}{}{}}
+\zref@newlabel{footdir@151}{\abspage{41}}
+\zref@newlabel{footdir@150}{\abspage{41}}
+\citation{attention2017}
+\citation{attention2017}
+\@writefile{lof}{\contentsline {figure}{\numberline {2-10}{\ignorespaces شکل ضرب نقطه‌ای مقیاس‌پذیر و توجه چندسری}}{30}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:multi-head}{{2-10}{30}{شکل ضرب نقطه‌ای مقیاس‌پذیر و توجه چندسری}{figure.caption.13}{}}
+\newlabel{fig:multi-head@cref}{{[figure][10][2]2-10}{[1][30][]30}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2-4-5}شبکه‌های پیش‌خور }{30}{subsection.2.4.5}\protected@file@percent }
+\newlabel{eq:ffn}{{2-31}{31}{شبکه‌های پیش‌خور}{equation.2.31}{}}
+\newlabel{eq:ffn@cref}{{[equation][31][2]2-31}{[1][31][]31}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2-4-6}نرمال‌سازی لایه}{31}{subsection.2.4.6}\protected@file@percent }
+\zref@newlabel{footdir@154}{\abspage{43}}
+\pp@pagectr{footnote}{69}{85}{31}
+\zref@newlabel{footdir@152}{\abspage{43}}
+\pp@pagectr{footnote}{68}{85}{31}
+\newlabel{eq:normal}{{2-33}{31}{نرمال‌سازی لایه}{equation.2.33}{}}
+\newlabel{eq:normal@cref}{{[equation][33][2]2-33}{[1][31][]31}{}{}{}}
+\zref@newlabel{footdir@156}{\abspage{43}}
+\zref@newlabel{footdir@153}{\abspage{43}}
+\zref@newlabel{footdir@155}{\abspage{43}}
+\citation{attention2017}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2-4-7}رمزگذار}{32}{subsection.2.4.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2-4-8} رمزگشا}{33}{subs
