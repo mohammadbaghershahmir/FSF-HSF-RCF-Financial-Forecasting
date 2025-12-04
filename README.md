@@ -2,7 +2,7 @@
 
 This repository contains three related research frameworks for forecasting the daily **direction** of Bitcoin (BTC) and Gold (XAU) prices using large language models (LLMs) and multi‑source market data:
 
-- **FSF**: Flexible Single-Agent Framework  
+- **FSF**: Fusion Single-Agent Framework  
 - **HSF**: Hierarchical Specialized-Agent Framework  
 - **RCF**: Reflective Consensus Framework
 
@@ -19,7 +19,7 @@ They differ mainly in **how they structure agents and produce preference data**,
 
 Each framework consumes the same preprocessed data, produced by an upstream **Information Sources (IS)** module. This module is not implemented here, but its outputs are provided as files under each project’s `data/` directory.
 
-For each trading day \(t\), the IS module generates:
+For each trading day t, the IS module generates:
 
 - **Numerical price features**
   - `x_candle_BTC,t` from BTC OHLCV data
@@ -46,25 +46,25 @@ The raw tweet and sentiment samples (used to create the above features) are unde
 All three frameworks use the same two‑stage learning strategy:
 
 - **Stage 1 – Supervised Fine‑Tuning (SFT)**  
-  A reference model \(\pi_\text{ref}\) is trained on a supervised dataset \(\mathcal{D}_\text{SFT}\) built from high‑confidence predictions that match the true label \(g_t\).  
+  A reference model pi_ref is trained on a supervised dataset  built from high‑confidence predictions that match the true label g_t.  
   The loss is the usual language‑model cross‑entropy over the target explanation sequence.
 
 - **Stage 2 – Preference-based DPO Fine‑Tuning**  
-  When the model’s initial answer is wrong or has low confidence, a **reflection cycle** is triggered. The model analyzes its own mistake and produces a corrected answer; we store a **preferred** answer \(y^w\) and a **less preferred** answer \(y^l\), building a preference dataset \(\mathcal{D}_\text{Pref}\).  
-  The model is then trained with the **DPO loss**, which directly optimizes the log‑odds between \(\pi_\theta\) and \(\pi_\text{ref}\) over \((y^w, y^l)\).
+  When the model’s initial answer is wrong or has low confidence, a **reflection cycle** is triggered. The model analyzes its own mistake and produces a corrected answer; we store a **preferred** answer y_w and a **less preferred** answer y_l, building a preference dataset.  
+  The model is then trained with the **DPO loss**, which directly optimizes the log‑odds between pi_theta and pi_ref over (y_w, y_l).
 
 All implementations use the Tiny‑Vicuna model (`Jiayi-Pan/Tiny-Vicuna-1B`) by default, with LoRA adapters and optional DeepSpeed for scalable training.
 
 ---
 
-## 3. FSF – Flexible Single-Agent Framework
+## 3. FSF – Fusion Single-Agent Framework
 
 **Folder**: `FSF/`  
 **Main entry point**: `python main.py`
 
 ### 3.1 Concept
 
-FSF uses a **single adaptive LLM agent** that directly consumes all available information sources for both markets in a unified prompt. For each trading day \(t\), the input vector \(x_t\) concatenates:
+FSF uses a **single adaptive LLM agent** that directly consumes all available information sources for both markets in a unified prompt. For each trading day t, the input vector x_t concatenates:
 
 - BTC and XAU candlestick features
 - BTC and XAU textual summaries
@@ -77,7 +77,7 @@ The agent produces a **two‑part output**:
 
 ### 3.2 Reflection & Preference Generation
 
-- If the initial answer matches the true label and its probability exceeds a threshold \(\tau\), the pair \((x_t, \tilde{y}_t)\) is added to the supervised dataset \(\mathcal{D}_\text{SFT}\).
+- If the initial answer matches the true label and its probability exceeds a threshold tau, the pair (x_t, y_tilde) is added to the supervised dataset.
 - Otherwise, the model enters a **self‑reflection cycle**:
   - It analyzes why its previous prediction may be wrong.
   - It generates a corrected answer and an improved explanation.
@@ -118,11 +118,11 @@ By default, the training line (`exp_model.train()`) is commented; you can uncomm
 HSF introduces a **hierarchical architecture with two specialized LLM agents**, each focusing on a different modality:
 
 - **Numerical & sentiment agent**  
-  - Input: price features `x_candle` + sentiment distributions `π_sent`  
+  - Input: price features `x_candle` + sentiment distributions `pi_sent`  
   - Task: predict direction and explain based mainly on quantitative and sentiment signals.
 
 - **Textual & sentiment agent**  
-  - Input: textual summaries `s_sum` + sentiment distributions `π_sent`  
+  - Input: textual summaries `s_sum` + sentiment distributions `pi_sent`  
   - Task: predict direction and explain based on news / textual signals.
 
 The outputs of these two agents are then **combined at a higher level**:
@@ -136,8 +136,8 @@ This design allows you to **separately analyze the contribution of numeric vs. t
 
 The reflection logic is similar to FSF but applied **per agent**:
 
-- Correct, high‑confidence agreements feed \(\mathcal{D}_\text{SFT}\).
-- Errors trigger agent‑specific reflection and populate \(\mathcal{D}_\text{Pref}\).
+- Correct, high‑confidence agreements feed the supervised dataset.
+- Errors trigger agent‑specific reflection and populate the preference dataset.
 - Training again follows SFT → DPO, as described in Section 2.
 
 ### 4.3 How to Run
@@ -179,7 +179,7 @@ RCF is the most advanced framework, designed to:
 
 It uses an **ensemble of identical LLMs** that share weights but receive **different prompts**, encouraging diversity in reasoning. For each trading day:
 
-1. Multiple models run **in parallel** on the same IS input \(x_t\).
+1. Multiple models run **in parallel** on the same IS input x_t.
 2. Each model outputs:
    - A **direction label** (Positive / Negative)
    - A **textual explanation**
@@ -187,12 +187,12 @@ It uses an **ensemble of identical LLMs** that share weights but receive **diffe
 
 ### 5.2 Consensus, Reflection, and Datasets
 
-- If the **majority vote** label matches the ground truth \(g_t\), the explanations of the agreeing models are **combined** and stored in \(\mathcal{D}_\text{SFT}\).
+- If the **majority vote** label matches the ground truth g_t, the explanations of the agreeing models are **combined** and stored in the supervised dataset.
 - If the vote is **incorrect**, all mis‑predicting models enter a **two‑stage reflection process**:
   1. **Solution reflection** – each model analyzes its own previous answer, identifies the most likely sources of error, and produces a refined prediction and explanation.
   2. **Combined reflection** – the various reflected explanations (keywords, evidence, reasoning paths) are merged into a more coherent, higher‑quality explanation.
 
-From these reflections, RCF constructs preference pairs \((y^w, y^l)\) and trains the ensemble using the same DPO loss as in FSF/HSF.
+From these reflections, RCF constructs preference pairs (y_w, y_l) and trains the ensemble using the same DPO loss as in FSF/HSF.
 
 ### 5.3 How to Run
 
